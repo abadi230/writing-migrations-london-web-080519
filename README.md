@@ -9,26 +9,26 @@
 
 ## Creating a Table
 
-The first thing we will do is create a table. In
+<!-- The first thing we will do is create a table. In
 `db/migrate/01_create_students.rb`, write the code to create a table with
-Active Record. We've created a class for you called `CreateStudents`.
+Active Record. We've created a class for you called `CreateStudents`. -->
 
-Define a method called `change` and use the Active Record `create_table`
+<!-- Define a method called `change` and use the Active Record `create_table`
 method within that method to create the table. The table should have a `:name`
-column with a type `string`.
+column with a type `string`. -->
 
-After you finish defining the `change` method, run the migrations by running
-`rake db:migrate` in your terminal.
+<!-- After you finish defining the `change` method, run the migrations by running
+`rake db:migrate` in your terminal. -->
 
 ## Adding a Column
 
-The next thing we will do is add a couple of columns to the `students` table we
+<!-- The next thing we will do is add a couple of columns to the `students` table we
 just created. To do this, we will create a second migration file. *We cannot add
 these columns to the existing file.* Let's call our new file
 `02_add_grade_and_birthdate_to_students.rb`. It should live in `db/migrate` just
-like the first migration.
+like the first migration. -->
 
-This new migration will look similar to the previous one. We will need a class
+<!-- This new migration will look similar to the previous one. We will need a class
 that inherits from `ActiveRecord::Migration`, and we will need to define a
 change method. Sticking to conventions, name the class
 `AddGradeAndBirthdateToStudents`, since that is what we're doing (and that is
@@ -37,11 +37,11 @@ the camel case version of the _filename_, minus the numbers in front). Inside
 method.
 
 Let's add a `:grade` column and a `:birthdate` column. The `:grade` column type
-should be `integer` and the `:birthdate` column type should be `string`.
+should be `integer` and the `:birthdate` column type should be `string`. -->
 
 ## Changing a Column
 
-Imagine you're creating an incredible web app to send out a birthday greeting on
+<!-- Imagine you're creating an incredible web app to send out a birthday greeting on
 each student's birthday. While building this, you realize you accidentally
 stored your birthdate data as a `string`. It would be much easier to work with
 if the column type was `datetime` instead. Let's fix that.
@@ -54,7 +54,7 @@ as the file but with capital letters instead of underscores:
 
 This migration will have the same setup as the last. Be sure to use the
 `change_column` method. It takes three necessary arguments:
-`change_column(table_name, column_name, type)`.
+`change_column(table_name, column_name, type)`. -->
 
 ## Active Record 5.x Migration Syntax
 
